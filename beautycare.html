@@ -1,0 +1,328 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" type="text/css" href="beauty.css">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+<script src="beauty.js">
+</script>
+</head>
+<body>
+  
+<div class="topnav" id="myTopnav" >
+            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+                <div id="login">
+                     
+                    <form action="/action_page.php">
+                        <div class="form-group">
+                            <label for="email">Email address:</label>
+                            <input type="email" class="form-control" placeholder="Email id"id="email">
+                        </div>
+                        <div class="form-group">
+                            <label for="pwd">Password:</label>
+                            <input type="password" class="form-control"placeholder="Password" id="pwd">
+                        </div>
+                        <div class="checkbox">
+                            <label><input type="checkbox"> Remember me</label>
+                        </div>
+                        <button type="submit" class="btn btn-default">Log in</button>
+                      </form>
+                
+ </div>
+</div>
+    <div class="container"id="navigation">
+      
+            <nav class="navbar navbar-default navbar-fixed-top" style="height:85px">
+            <div class="container-fluid">
+                <div class="navbar-header">
+                  <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+                    <span class="icon-bar"></span></button>
+                  <a class="navbar-brand" href="#myPage"><img src="images/logo.jpeg"></a>
+                </div>
+                <div class="collapse navbar-collapse" id="myNavbar">
+                  <ul class="nav navbar-nav navbar-right">
+                    <li><a href="#container1">HOME</a></li>
+                    <li><a href="#abtus">ABOUT US</a></li>
+                    <li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="#">
+                      SERVICES  <span class="caret"></span></a>
+                      <ul class="dropdown-menu">
+                        <li><a href="#">Photos</a></li>
+                        <li><a href="#id03">Videos</a>
+                       </li>   
+                      </ul>
+                    </li>
+                    <li><a href="#gallery">GALLERY</a></li>
+                    <li><a href="#id02">ENQUIRY</a></li>
+                    
+                    <li><a href="signup.html">Sign Up</a></li>
+                    
+                    <li><a href="#"><span class="glyphicon glyphicon-search"></span></a></li>
+
+                    <li><div class="float-md-left" style="padding-top:15px"><span onclick="openNav()">Login Here..&#9776;</span> </div></li>
+
+                  </ul>
+                 </div>
+            </div>  
+            </nav>
+
+</div>
+<header style="padding-top:30px"> 
+             <h1> Konica Photography</h1>
+        </header>
+ <div class="container-fluid" id="container1">
+  
+        <!--Slideshow-->
+           <div class="container" id="main">
+              <div class="slideshow-container">
+
+                    <div class="mySlides">
+                      <div class="numbertext">1 / 4</div>
+                      <img src="images/img1.jpg" alt="Sample image"style="width:100%">
+                      <div class="text">Caption Text</div>
+                    </div>
+
+                    <div class="mySlides">
+                      <div class="numbertext">2 / 4</div>
+                      <img src="images/img3.jpg" style="width:100%">
+                      <div class="text">Caption Two</div>
+                    </div>
+
+                    <div class="mySlides">
+                      <div class="numbertext">3 / 4</div>
+                      <img src="images/img10.jpg" style="width:100%">
+                      <div class="text">Caption Three</div>
+                    </div>
+
+                    <div class="mySlides">
+                      <div class="numbertext">4 / 4</div>
+                      <img src="images/img2.jpg" style="width:100%">
+                      <div class="text">Caption Four</div>
+                    </div>
+
+                    <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+                    <a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+                    </div>
+                    <br>
+
+                    <div style="text-align:center">
+                      <span class="dot" onclick="currentSlide(1)"></span> 
+                      <span class="dot" onclick="currentSlide(2)"></span> 
+                      <span class="dot" onclick="currentSlide(3)"></span> 
+                      <span class="dot" onclick="currentSlide(4)"></span> 
+                    </div>
+
+            </div>
+            <!--full container starts here-->
+     
+      
+            <!--About us Container-->
+            <div class="jumbotron" id="abtus">
+                  <h3>About Team</h3>
+                  <p>When you choose your wedding photographer, they should capture images which tell a story with vivid pictography and breathtaking detail and yet mantain the feel... Our exquisite portraits reflect form part of the story that unfolds on your big day and your inherent personality. A melting pot of creativity, innovation, experience and enthusiasm, the company has been working proactively with the prestigious clients.
+                  Each moment in life has memorable things which are close to our heart, as the time passes our memories fade... We capture the memories of those special moments. We can capture any moment of joy and happiness with great ease so that they remain as sweet memories throughout your life. 
+                  </p>
+                  <p>Our Inspirational studio environment was created for you to walk around the studio surrounded by beautiful homely environment that makes u feel ur home... 
+                  </p>
+                  <div class="row">
+                  <div class="col-md-3">
+                    <div class="card">
+                        <img src="images/img2.jpg" alt="Mike" style="width:100%">
+                        <div class="img-thumbnail">
+                          <h2>Mike Ross</h2>
+                          <p class="title">Art Director</p>
+                          <p>Some text that describes me lorem ipsum ipsum lorem.</p>
+                          <p>example@example.com</p>
+                          <p><button class="button">Contact</button></p>
+                        </div>
+                      </div>
+                  </div>
+                  <div class="col-md-3">
+                    <div class="card">
+                        <img src="images/img1.jpg" alt="Mike" style="width:100%">
+                        <div class="img-thumbnail">
+                          <h2>Mike Ross</h2>
+                          <p class="title">Art Director</p>
+                          <p>Some text that describes me lorem ipsum ipsum lorem.</p>
+                          <p>example@example.com</p>
+                          <p><button class="button">Contact</button></p>
+                        </div>
+                      </div>
+                  </div>
+                  <div class="col-md-3">
+                    <div class="card">
+                        <img src="images/img3.jpg" alt="Mike" style="width:100%">
+                        <div class="img-thumbnail">
+                          <h2>Mike Ross</h2>
+                          <p class="title">Art Director</p>
+                          <p>Some text that describes me lorem ipsum ipsum lorem.</p>
+                          <p>example@example.com</p>
+                          <p><button class="button">Contact</button></p>
+                        </div>
+                      </div>
+                  </div>
+                  <div class="col-md-3">
+                  <div class="card">
+                        <img src="images/img7.jpg" alt="Mike" style="width:100%">
+                        <div class="img-thumbnail">
+                          <h2>Mike Ross</h2>
+                          <p class="title">Art Director</p>
+                          <p>Some text that describes me lorem ipsum ipsum lorem.</p>
+                          <p>example@example.com</p>
+                          <p><button class="button">Contact</button></p>
+                        </div>
+                      </div>
+                  </div>
+                </div>
+            </div>
+<!--About ends here and GALLERY starts-->
+
+                  <div class="jumbotron" id="gallery">
+
+                  <div class="row" >
+                    <div class="col-md-3">
+                      <img src="images/img5.jpg" style="width:100%" onclick="myFunction(this);" class="img-thumbnail">
+                    </div>
+                    <div class="col-md-3">
+                      <img src="images/img6.jpg" style="width:100%" onclick="myFunction(this);" class="img-thumbnail">
+                    </div>
+                    <div class="col-md-3">
+                      <img src="images/img7.jpg" style="width:100%" onclick="myFunction(this);" class="img-thumbnail">
+                    </div>
+                    <div class="col-md-3">
+                      <img src="images/img9.jpg" style="width:100%" onclick="myFunction(this);" class="img-thumbnail">
+                    </div>
+                  <div class="row" >
+                    <div class="col-md-3">
+                      <img src="images/img10.jpg" style="width:100%" onclick="myFunction(this);" class="img-thumbnail">
+                    </div>
+                    <div class="col-md-3">
+                      <img src="images/img1.jpg" style="width:100%" onclick="myFunction(this);" class="img-thumbnail">
+                    </div>
+                    <div class="col-md-3">
+                      <img src="images/img2.jpg" style="width:100%" onclick="myFunction(this);" class="img-thumbnail">
+                    </div>
+                    <div class="col-md-3">
+                      <img src="images/img4.jpg" style="width:100%" onclick="myFunction(this);" class="img-thumbnail">
+                    </div>
+
+                      </div>
+                  <div class="row" >
+                    <div class="col-md-6">
+                      <img src="images/img8.jpg" style="width:100%" onclick="myFunction(this);" class="img-thumbnail">
+                    </div>
+                    <div class="col-md-6">
+                      <img src="images/img3.jpg" style="width:100%" onclick="myFunction(this);" class="img-thumbnail">
+                    </div>
+
+                      </div>
+                  <!-- The expanding image container -->
+                  <div class="container">
+                    <!-- Expanded image -->
+                    <img id="expandedImg" style="width:100%">
+
+                    <!-- Image text -->
+                    <div id="imgtext"></div>
+                  </div>
+                      
+                      <div class="caption-container">
+                        <p id="caption"></p>
+                      </div>
+                    </div>
+
+                  </div>
+                  <!--Gallery Ends and Contact starts-->
+                  
+
+
+
+
+           <div id="id02" class="jumbotron container" >
+             
+                      <form action="action_page.php" class="modal-content2">
+                    
+                    <div class="row">
+                              <div class="col-md-6">
+                              <h3>  Contact Us</h3>
+
+                              Konica Studio,
+                              Valanjavattom P.O.
+                              Thiruvalla - 689104
+
+                              Phone : 0469-2610875 (O)
+                              Mobile : 9847311122, 9447464469
+
+                              Email : konicadigitals@yahoo.com,  chandragroupofstudios@gmail.com
+                              </div>
+                              <div class="col-md-6">
+                    <div class="container">
+                        
+                        <label for="fname">First Name</label>
+                        <input type="text" id="fname" name="firstname" placeholder="Your name..">
+
+                        <label for="lname">Last Name</label>
+                        <input type="text" id="lname" name="lastname" placeholder="Your last name..">
+
+                        <label for="country">Country</label>
+                        <select id="country" name="country">
+                          <option value="australia">Australia</option>
+                          <option value="canada">Canada</option>
+                          <option value="usa">USA</option>
+                        </select>
+
+                        <label for="subject">Subject</label>
+                        <textarea id="subject" name="subject" placeholder="Write something.." style="height:200px"></textarea>
+
+                        <input type="submit" class="signupbtn" value="Submit">
+                    </div>
+                        </div>
+
+                        </div>
+                        
+                      </form>
+        </div>
+       <!--Contact Ends and Video play starts-->
+        <div class="jumbotron container" id="id03">
+          <div class="container">
+            
+        <video width="400" controls class="videoplay">
+          <source src="videos/video1.mp4" type="video/mp4">
+          <source src="mov_bbb.ogg" type="video/ogg">
+          Your browser does not support HTML5 video.
+        </video>
+        </div>
+        </div>
+</div><!--main container ends here-->
+ <footer>
+  <ol class="breadcrumb">
+        <li class="dropdown">
+        <a class="dropdown-toggle" data-toggle="dropdown" href="#">Menu 1 <span class="caret"></span></a>
+        <ul class="dropdown-menu">
+           <li><a href="#">Submenu 1-1</a></li>
+           <li><a href="#">Submenu 1-2</a></li>
+       </ul>
+        </li>
+
+      <div class="icons" style="float:left">
+          <a href="#" class="fa fa-facebook"></a>
+          <a href="#" class="fa fa-twitter"></a>
+          <a href="#" class="fa fa-google"></a>
+          <a href="#" class="fa fa-linkedin"></a>
+          <a href="#" class="fa fa-youtube"></a>
+          <a href="#" class="fa fa-instagram"></a>
+          <a href="#" class="fa fa-pinterest"></a>
+      </div>
+      <div style="float:right"> Design by JISA</div>
+
+
+  </ol>
+  </footer>
+    
+   <script src="slide.js"></script>
+</body>
+</html>
